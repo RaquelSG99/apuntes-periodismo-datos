@@ -1,5 +1,5 @@
 # Apuntes de periodismo de datos
-#2021-2022 P63
+# 2021-2022 P63
 ## Web
 Se compone de tres tecnologías
 1. HTML
