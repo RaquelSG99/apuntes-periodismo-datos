@@ -2,7 +2,7 @@
 
 La ONU ha presentado este 28 de febrero su informe anual redactado por el Grupo Intergubernamental de Expertos sobre el Cambio Climático (IPCC). En él, alerta de que el impacto del calentamiento global es "más rápido, grave y amplio" de lo que se creía. **Ya hemos superado las cifras previstas hace 20 años**. Por ello, el grupo insta a tomar **medidas urgentes.**
 
-![Variación de la temperatura media mensual en el mundo](https://github.com/RaquelSG99/imagenes/blob/main/Variaci%C3%B3n%20de%20la%20temperatura%20media%20mensual%20en%20el%20mundo.png?raw=true)
+![Variación de la temperatura media mensual en el mundo](https://github.com/RaquelSG99/imagenes/blob/main/Variacion%20Ta%20pie%20de%20foto.png?raw=true)
 
 Una de las claves es la elevación de la temperatura media global que ya venimos experimentando en los últimos tiempos. Los diez años más cálidos registrados pertenecen a las dos últimas décadas. Se estima que, **durante los próximos 20 años, experimentaremos un aumento de 1,5ºC de manera inevitable.** Limitarlo a 2ºC conllevaría una reducción del 25% de las emisiones de CO2 para el 2030. Si no se reducen para esa fecha, a partir del 2030 deberían tomarse medidas más drásticas y a un mayor coste económico y social. António Guterres, el secretario general de Naciones Unidas, ha calificado estos hallazgos como un “código rojo”.
 
