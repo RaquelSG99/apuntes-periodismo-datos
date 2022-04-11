@@ -1,0 +1,10 @@
+tree
+sdesc: "Display graphical directory tree"
+ldesc: "Display an indented directory tree, using the same color assignments
+as ls, via the LS_COLORS environment variable."
+category: Utils
+requires: cygwin
+version: 1.7.0-1
+install: x86_64/release/tree/tree-1.7.0-1.tar.xz 46456 3c777e777b2ccf9c5ad7b61798153014bcd05b097fbca384390bdfce5a71f0a46ce3cf151eb7a7ee2b3960e3959436ddbf1c53f7c3ed64a770e65363bc062a95
+source: x86_64/release/tree/tree-1.7.0-1-src.tar.xz 116576 3f74348bfec6734a1a2cb1880ed950f3a80ff714c25f4d41d0a9d37f4ee9946faaad36ad7c2f77b0a46478551e26f75b119002c942caf0b2258f1ddf368d5b48
+depends2: cygwin
