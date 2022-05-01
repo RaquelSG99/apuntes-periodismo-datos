@@ -1,0 +1,475 @@
+
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>JupyterHub</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="/hub/static/css/style.min.css?v=a690a7f26f8eda24b6043d972eda379b7f3df65dcb4832fbec0d72d1585b6bdf2bd15c7f3ec4597b79a7c91798181ba23b9a0204da8165b21ff81cd85f89a933" type="text/css"/>
+    
+    
+    <link rel="icon" href="/hub/static/favicon.ico?v=fde5757cd3892b979919d3b1faa88a410f28829feb5ba22b6cf069f2c6c98675fceef90f932e49b510e74d65c681d5846b943e7f7cc1b41867422f0481085c1f" type="image/x-icon">
+    
+    
+    <script src="/hub/static/components/requirejs/require.js?v=bd1aa102bdb0b27fbf712b32cfcd29b016c272acf3d864ee8469376eaddd032cadcf827ff17c05a8c8e20061418fe58cf79947049f5c0dff3b4f73fcc8cad8ec" type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/components/jquery/dist/jquery.min.js?v=6cb4f4426f559c06190df97229c05a436820d21498350ac9f118a5625758435171418a022ed523bae46e668f9f8ea871feab6aff58ad2740b67a30f196d65516" type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/components/bootstrap/dist/js/bootstrap.min.js?v=a014e9acc78d10a0a7a9fbaa29deac6ef17398542d9574b77b40bf446155d210fa43384757e3837da41b025998ebfab4b9b6f094033f9c226392b800df068bce" type="text/javascript" charset="utf-8"></script>
+    
+    <script>
+      require.config({
+          
+          urlArgs: "v=20220419113332",
+          
+          baseUrl: '/hub/static/js',
+          paths: {
+            components: '../components',
+            jquery: '../components/jquery/dist/jquery.min',
+            bootstrap: '../components/bootstrap/dist/js/bootstrap.min',
+            moment: "../components/moment/moment",
+          },
+          shim: {
+            bootstrap: {
+              deps: ["jquery"],
+              exports: "bootstrap"
+            },
+          }
+      });
+    </script>
+
+    <script type="text/javascript">
+      window.jhdata = {
+        base_url: "/hub/",
+        prefix: "/",
+        
+        
+        admin_access: false,
+        
+        
+        options_form: false,
+        
+      }
+    </script>
+
+    
+    
+
+</head>
+
+<body style="background-color: #F5F5F5 !important;">
+
+<noscript>
+  <div id='noscript'>
+    JupyterHub requires JavaScript.<br>
+    Please enable it to proceed.
+  </div>
+</noscript>
+
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        
+        <span id="jupyterhub-logo" class="pull-left">
+            <a href="/hub/"><img src='/hub/logo' alt='JupyterHub' class='jpy-logo' title='Home'/></a>
+        </span>
+        
+        
+      </div>
+
+      <div class="collapse navbar-collapse" id="thenavbar">
+        
+        <ul class="nav navbar-nav navbar-right">
+          
+            <li>
+              
+
+            </li>
+          
+        </ul>
+      </div>
+
+      
+      
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+<div id="login-main" class="container" style='font-family: Arial !important; background-color: #040d77 !important; width: 100% !important; margin-top: 0px !important;'>
+
+<div style='background-color: #FFF !important; padding: 20px !important; border-radius: 5px !important; width: 100%; height: 100%; margin: auto; margin-top: 90px; '>
+
+	<div style='text-align: center !important;'>
+		<div class="control-group">
+          <label class="login-field-icon fui-user" for="login-name"></label>
+        </div>  
+
+		<div style='margin-bottom: 10px !important;'>
+		  <img src="https://drive.google.com/uc?export=view&id=1vhkNhSz5walvRPFQ6YhXpWr8iUwonc4b" width="1250"></img>
+		</div>
+	
+		
+		<hr style="height:20px;border-width:0;color:#040d77;background-color:#040d77">
+
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+			Si eres docente y aún no has solicitado este servicio para tu clase, dirígete a <a href="mailto:rbecerra@di.uc3m.es">UC3M Digital </a>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+			Si eres estudiante y tu docente te ha matriculado en el servicio, accede directamente, si no puedes hacerlo dirígete <a href="mailto:rbecerra@di.uc3m.es"> UC3M Digital </a>.
+		<br>
+		<div style='margin-top: 20px; '>	
+		<a role="button" class='btn btn-jupyter btn-lg' href='https://jupyterhub.UC3M.es/hub/google/oauth_login' style='border: 2px solid transparent !important; background: #040d77 !important; color: #ffffff !important; font-size: 16px !important; line-height: 25px !important; padding: 10px 0 !important; text-decoration: none !important; text-shadow: none !important; border-radius: 3px !important; box-shadow: none !important; transition: 0.25s !important; display: block !important; width: 250px !important; margin: 0 auto !important; ' >
+          Sign in with Universidad Carlos III
+        </a>
+		</div>
+		<br>
+
+<! –– FAQ 	––>	
+
+		<h2>FAQ<h2>
+		
+		<hr style="text-align:left;margin-left:0";color: #040d77>
+		
+	</div>
+	
+	<div style='text-align: left !important;'>	
+		
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué es el Proyecto Jupyter?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		El Proyecto Jupyter nace en 2014 como una iniciativa sin fines de lucro y de código abierto desarrollada para soportar ciencia de datos y computación científica en varios lenguajes de programación.  Actualmente, Jupyter soporta 40 lenguajes de programación, incluyendo Python, R, Julia y Scala
+		</p>
+		
+		<a href= "https://jupyter.org/"> Mayor información acerca de Jupyter </a>
+		
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+	
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué es un JupyterHub?
+		</p>
+	
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		JupyterHub es un entorno preconfigurado que permite el uso de las interfaces de Jupyter a varios usuarios de manera simultánea. Este espacio está manejado por administradores de sistemas por lo que se evita que el usuario trate con temas de instalación y mantenimiento, facilitando su uso. 
+		</p>
+		
+		<a href= "https://jupyterhub.readthedocs.io/en/stable/">Documentación JupyterHub</a>
+		
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+	
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué es un Jupyter Notebook?</p>
+	
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		Es una aplicación web que permite desplegar código y texto en un documento convirtiendo a la computación en interactiva y exploratoria. Los notebooks pueden ser distribuidos con otros usuarios al poder descargarlos en varios formatos como pdf, HTML, Markdown, Python, etc.
+		</p>
+	
+		<a href= "https://jupyter-notebook.readthedocs.io/en/stable/">Documentación Jupyter Notebooks</a>
+
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+	
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Para qué puedo usar los Jupyter Notebooks?</p>
+	
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		Dentro de una clase existen diversos usos que se le puede dar a un Jupyter Notebook entre los que encontramos:
+		</p>
+		
+			<p style="font-size: 16px !important;color: ##ffffff !important;font-weight: bold !important; display: block !important;margin-left: 40px !important; margin-top: 12px !important;">
+			1. Libros de texto estáticos
+			</p>
+			
+			<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;margin-left: 40px !important; ">
+			Es el primer punto de partida para la transición a la creación de Jupyter Notebooks. Esta aplicación permite crear documentos narrativos estáticos para generar materiales de lectura previos a la clase. El siguiente paso sería la extensión de estos materiales haciendo uso de las celdas de código para crear oportunidades de aprendizaje activo.
+			</p>
+		
+			<p style="font-size: 16px !important;color: ##ffffff !important;font-weight: bold !important; display: block !important;margin-left: 40px !important; margin-top: 12px !important;">
+			2. Libros de trabajo
+			</p>
+			
+			<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;margin-left: 40px !important; ">
+			Los Notebooks pueden ser utilizados como mecanismos de trabajo, introduciendo al estudiante al aprendizaje activo. Adicionalmente, permite organizar grandes flujos de trabajo en documentación conectada y organizada, evitando largos scripts con códigos desconectados o pdfs con código incrustado sin poder ejecutarlo.
+			</p>
+			
+			<p style="font-size: 16px !important;color: ##ffffff !important;font-weight: bold !important; display: block !important;margin-left: 40px !important; margin-top: 12px !important;">
+			3. Hojas de trabajo o set de ejercicios
+			</p>
+			
+			<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;margin-left: 40px !important; ">
+			La estructura de los Notebooks permite la construcción de set de problemas de una manera visualmente digerible para el estudiante y que incluso soporta el uso de herramientas de auto calificación como nbgrader que podrían generar un feedback inmediato.
+			</p>
+			
+			<p style="font-size: 16px !important;color: ##ffffff !important;font-weight: bold !important; display: block !important;margin-left: 40px !important; margin-top: 12px !important;">
+			4. Paquete de cursos u hojas de notas
+			</p>
+			
+			<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;margin-left: 40px !important; ">
+			Al igual que el caso de hojas de trabajo o sets, promover el uso de Notebooks en forma de libros de notas en la clase,  ayudaría al estudiante a fomentar el aprendizaje activo.
+			</p>
+			
+			<p style="font-size: 16px !important;color: ##ffffff !important;font-weight: bold !important; display: block !important;margin-left: 40px !important; margin-top: 12px !important;">
+			5. Aplicaciones y plataformas multimedia interactivas
+			</p>
+			
+			<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;margin-left: 40px !important; ">
+			Los Notebooks permiten entregar al usuario contenido interactivo generando la oportunidad de fomentar la lectura activa y participación en el tema tratado. Además, la flexibilidad entregada permite incluir una gran variedad de recursos como videos, imágenes, e incluso cualquier código en HTML, lo que permitiría incrustar recursos interactivos como los provistos por <a href=’https://www.genial.ly/es’> Genially.</a>
+			</p>
+			
+			<p style="font-size: 16px !important;color: ##ffffff !important;font-weight: bold !important; display: block !important;margin-left: 40px !important; margin-top: 12px !important;">
+			6. Reportes de laboratorio y tareas
+			</p>
+			
+			<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;margin-left: 40px !important; ">
+			Sin importar el tipo de contenido, se puede hacer uso de los Notebooks para generar entregas con diversos formatos. Esta herramienta se convierte en un recurso particularmente valioso por la escalabilidad que la caracteriza al poder estar asociada con el desarrollo de tareas con entrega de auto feedback, sobre todo en temas de programación.
+			</p>
+			
+			<p style="font-size: 16px !important;color: ##ffffff !important;font-weight: bold !important; display: block !important;margin-left: 40px !important; margin-top: 12px !important;">
+			7. Plataforma demostrativa
+			</p>
+			
+			<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;margin-left: 40px !important; ">
+			Los notebooks pueden utilizarse tanto como para presentar un tema desde el uso del formato básico, a modo de combinación de texto y celdas de código, o también hacer uso de plugins disponibles para convertirlos en presentaciones.
+			</p>
+			
+			<p style="font-size: 16px !important;color: ##ffffff !important;font-weight: bold !important; display: block !important;margin-left: 40px !important; margin-top: 12px !important;">
+			8. Programación en vivo
+			</p>
+			
+			<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;margin-left: 40px !important; ">
+			Crear Notebooks de código en clase permite al alumno vivir el proceso de codificación. Adicionalmente, permite que el docente haga hincapié en posibles bugs o errores que se puedan generar y mostrar la manera de arreglarlos.
+			</p>
+		
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+	
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué es JupyterLab?</p>
+	
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		JupyterLab es la nueva interfaz de Jupyter Project la cual se considera una versión mejorada. A diferencia de la vista tradicional de Jupyter Notebooks, nos permite combinar la visualización de datos, de consola y de notebooks. Adicionalmente, despliega una extensión de Git para el manejo de control de versiones y un browser de los archivos en los directorios.
+		</p>
+		
+		<a href= "https://jupyterlab.readthedocs.io/en/latest/">Documentación JupyterLab</a>
+	
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+	
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Para qué puedo usar el JupyterLab?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		El JupyterLab nos va a permitir trabajar con múltiples documentos y actividades en una misma pantalla. Podremos separar archivos de texto, las consolas de código y terminales, formatos comunes, y Jupyter Notebooks. Por ejemplo, podemos abrir una consola de código para ejecutar código interactivo, un documento basado en un kernel como un Markdown, una ventana con una imagen, una ventana con un pdf, un Jupyter Notebook y que todo esto esté desplegado en el mismo sitio.
+		</p>
+		
+
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué es Jupyter Book?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		Un Jupyter Book es una herramienta que se despliega a través de una serie de comandos desde una terminal y permite crear publicaciones con un despliegue atractivo integrando varios notebooks con código y texto.
+		</p>
+		
+		<a href= "https://jupyterbook.org/intro.html">Documentación Jupyter Book</a>
+
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué son los Jupyter Widgets?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		Los Jupyter Widgets son elementos de Jupyter Notebooks que nos permiten generar interactividad con el usuario al permitirle visualizar y controlar cambios en los productos.
+		</p>
+		
+		<a href= "https://ipywidgets.readthedocs.io/en/latest/">Documentación Jupyter-Widgets</a>
+	
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué es Voilà?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		Voilà es una herramienta que convierte a un Jupyter Notebook en un dashboard o panel interactivo. Esto lo logra a través de la ejecución de un notebook y su conversión a HTML, desplegándolo ya sea como una aplicación Tornado o vía Jupyter Server.
+		</p>
+		
+		<a href= "https://voila.readthedocs.io/en/stable/">Documentación Voilà</a>
+	
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Cómo puedo abrir JupyterHub desde Aula Global?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		JupyterHub está integrado con Aula Global. Dentro de Aula Global en el modo de edición del curso podremos lanzar una herramienta externa de tipo JupyterHub que creará un enlace automático al espacio del usuario, por lo cual al momento que el alumno selecciona la tarea, se evita la doble autenticación.
+		</p>	
+
+
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Cómo puedo distribuir el material a mi clase?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		Dentro del JupyterHub existen grupos predefinidos para cada clase. Es posible compartir documentación a través de la carpeta compartida asignada para la clase, a través del uso del nbgrader, o a través de GitLab.
+		</p>
+		
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+		
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué es nbgrader?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		nbgrader  es una herramienta que ayuda en el proceso de creación y calificación de tareas basadas en Notebook interactivos. Al integrarlo con JupyterHub se puede distribuir y recoger las tareas automáticamente, el estudiante al ingresar se encontrará en su sesión con todas las tareas asignadas y podrá enviarlas directamente. Al igual, el instructor podrá recibir automáticamente las entregas y calificarlas.
+		<br>
+		Este add-on permite que los cuadernos puedan ser calificados automáticamente de forma masiva y al mismo tiempo que sean evaluados manualmente para ajustar puntajes, adicionar comentarios, o valorar respuestas abiertas o tasks.
+		</p>
+		
+		<a href= "https://nbgrader.readthedocs.io/en/latest/">Documentación nbgrader</a>
+
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+		
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué es GitLab?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		GitLab es un servicio web para la colaboración, control  de versiones,  automatización de tests, etc. en proyectos de software. 
+		</p>
+		
+		<a href= "https://docs.gitlab.com/">Documentación GitLab</a>
+	
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+		
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué lenguajes están soportados por el JupyterHub de la UC3M?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		Actualmente, el JupyterHub de la UC3M soporta Python 3, R, Java y Javascript. Si deseas trabajar en otro lenguaje, puedes comunicarte con 
+		<a href="mailto:rbecerra@di.uc3m.es">UC3M Digital </a>
+		</p>
+		
+
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Qué paquetes están instalados en el JupyterHub de la UC3M?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		Los paquetes que se encuentran instalados puedes encontrarlos en <a href= "https://docs.google.com/spreadsheets/d/1FOGfLPsUE4oqQzxho23nF0JXTmCw0VzJRg6f3xVVCqE/edit#gid=0">Librerías y Kernels UC3M</a>
+		</p>
+
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+	
+		<p style="font-size: 18px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+		¿Cómo puedo solicitar la instalación de paquetes?
+		</p>
+			
+		<p style="font-size: 16px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+		Adicional a los paquetes que han sido instalados,	 puedes solicitar la instalación de otros paquetes a <a href="mailto:rbecerra@di.uc3m.es"> UC3M Digital. </a> Además, desde tu usuario puedes instalar paquetes utilizando pip. 
+		</p>
+		
+	<hr style="height:20px;border-width:0;color:#040d77;background-color:#040d77">
+
+
+<p style="font-size: 18px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+			Si tienes otra pregunta contacta con <a href="mailto:rbecerra@di.uc3m.es"> UC3M Digital </a>.
+	</div>
+</div>
+
+
+	
+		<p style="font-size: 16px !important;color: #040d77 !important;display: block !important;margin-top: 12px !important;">
+
+		</p>
+			
+		<p style="font-size: 14px !important;color: #444 !important;display: block !important;margin-top: 12px !important;">
+	
+		</p>
+		
+		<a href= ‘https://jupyter.org/’> Mayor información acerca de Jupyter </a>
+
+	<hr style="text-align:left;margin-left:0";color: #040d77>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="error-dialog" tabindex="-1" role="dialog" aria-labelledby="error-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="error-label">Error</h4>
+      </div>
+      <div class="modal-body">
+        
+  <div class="ajax-error">
+    The error
+  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+if (window.location.protocol === "http:") {
+  // unhide http warning
+  var warning = document.getElementById('insecure-login-warning');
+  warning.className = warning.className.replace(/\bhidden\b/, '');
+}
+// setup onSubmit feedback
+$('form').submit((e) => {
+  var form = $(e.target);
+  form.find('.feedback-container>input').attr('disabled', true);
+  form.find('.feedback-container>*').toggleClass('hidden');
+  form.find('.feedback-widget>*').toggleClass('fa-pulse');
+});
+</script>
+
+
+</body>
+
+</html>
